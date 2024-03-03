@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\back.jpg" />
+    <None Remove="Images\iconpol.png" />
+    <None Remove="Images\iconskeys.png" />
+    <None Remove="Images\yoga.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\back.jpg" />
+    <Resource Include="Images\iconpol.png" />
+    <Resource Include="Images\iconskeys.png" />
+    <Resource Include="Images\yoga.png" />
+	
+	<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+</Project>
